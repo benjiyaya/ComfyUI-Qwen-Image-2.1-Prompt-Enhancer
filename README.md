@@ -6,6 +6,16 @@ Two nodes:
 - **T2I Prompt Rewrite** — expands a short text prompt into a detailed English description for text-to-image generation
 - **Edit Prompt Rewrite** — rewrites a vague edit instruction + source image(s) into a precise, actionable prompt
 
+<img width="694" height="618" alt="image" src="https://github.com/user-attachments/assets/15c1ca24-db7c-4b32-b996-e74604d55459" />
+
+<img width="1622" height="636" alt="image" src="https://github.com/user-attachments/assets/d2b70d0a-5084-4010-8324-f22e1b79499d" />
+
+
+<img width="723" height="993" alt="image" src="https://github.com/user-attachments/assets/21807f3b-a17d-42bb-9b6e-0cf5f605e56d" />
+
+<img width="1756" height="573" alt="image" src="https://github.com/user-attachments/assets/8b571192-5790-4c3f-8eec-3d87883fd8d0" />
+
+
 Repository: [github.com/benjiyaya/ComfyUI-Qwen-Image-2.1-Prompt-Enhancer](https://github.com/benjiyaya/ComfyUI-Qwen-Image-2.1-Prompt-Enhancer)
 
 ## Architecture
