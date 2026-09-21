@@ -6,6 +6,13 @@ Two nodes:
 - **T2I Prompt Rewrite** — expands a short text prompt into a detailed English description for text-to-image generation
 - **Edit Prompt Rewrite** — rewrites a vague edit instruction + source image(s) into a precise, actionable prompt
 
+- qwen3.5_9b_qwen_image_2.1_pe_t2i.int8_convrot.safetensors — 9.47 GB, text-to-image prompt rewriter
+https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/main/text_encoders/qwen3.5_9b_qwen_image_2.1_pe_t2i.int8_convrot.safetensors
+- qwen3.5_9b_qwen_image_2.1_pe_i2i.int8_convrot.safetensors — 9.47 GB, image-edit prompt rewriter
+https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/main/text_encoders/qwen3.5_9b_qwen_image_2.1_pe_i2i.int8_convrot.safetensors
+
+Folder: ComfyUI/models/text_encoders/
+
 <img width="694" height="618" alt="image" src="https://github.com/user-attachments/assets/15c1ca24-db7c-4b32-b996-e74604d55459" />
 
 <img width="1622" height="636" alt="image" src="https://github.com/user-attachments/assets/d2b70d0a-5084-4010-8324-f22e1b79499d" />
