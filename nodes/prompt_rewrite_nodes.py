@@ -35,13 +35,17 @@ def _chat_prompt(system_prompt: str, user_text: str) -> str:
 # System prompt loading
 # ---------------------------------------------------------------------------
 def _load_system_prompt(task: str) -> str:
-    import os
-    prompts_dir = os.path.join(os.path.dirname(__file__), "prompts")
-    path = os.path.join(prompts_dir, f"system_prompt_{task}.txt")
-    if os.path.isfile(path):
-        with open(path, "r", encoding="utf-8") as f:
-            return f.read().strip()
-    return ""
+    from pathlib import Path
+
+    # Prompt files live at the repository root, alongside the nodes directory.
+    path = Path(__file__).resolve().parent.parent / "prompts" / f"system_prompt_{task}.txt"
+    try:
+        text = path.read_text(encoding="utf-8").strip()
+    except OSError as exc:
+        raise RuntimeError(f"Unable to read system prompt: {path}") from exc
+    if not text:
+        raise RuntimeError(f"Empty system prompt: {path}")
+    return text
 
 
 # ---------------------------------------------------------------------------
